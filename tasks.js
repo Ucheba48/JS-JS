@@ -59,5 +59,44 @@ for (let el of people) {
 
 console.log(adults);
 console.log(children);
+
+let n = 12
+let primar =[]
+if (n > 0) {
+    let number = 1
+    while (primar.length < n) {
+        let isPrimar = true
+        for (let del = 2; del < number - 1; del++) {
+            if (number % del == 0) isPrimar = false
+        }
+        if (isPrimar) primar.push(number)
+        number++
+    }
+}
+console.log(primar);
+
+let fibo = [0, 1]
+let n1 = 10
+let lastElem = fibo[fibo.length - 1]
+if (n > 2) {
+    while (fibo.length < n1) {
+        fibo.push(fibo[fibo.length - 1] + fibo[fibo.length - 2])
+
+    }
+}
+console.log(fibo);
+
+let n2 = 8
+if (n > 0) {
+    let mult1 = 1
+    for (let i = 1; i <= n2; i++) {
+    mult1 =mult1 * i
+
+    }
+console.log(mult1);
+}
+
+
+
  
 
